@@ -137,6 +137,119 @@ aside .widget img{
 	width: 100%;
 }
 
+footer{
+	background-color: #C0392B;
+	padding: 20px;
+	width: 100%;
+	
+	/*Flexbox*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .links{
+	background-color: #C0392B;
+}
+
+footer .links a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+
+footer .links a:hover{
+	background-color: #E74C3C;
+}
+
+footer .social{
+	background-color: #000000;
+}
+
+footer .social a{
+	color: #ffffff;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+	
+}
+
+footer .social a:hover{
+	background-color: #797878;
+}
+
+@media screen and (max-width: 800px){
+	.contenedor{
+		flex-direction: column;
+	}
+
+	header{
+		flex-direction: column;
+	}
+
+	header .logo{
+		margin: 20px 0;
+	}
+
+	header nav{
+		width: 100%;
+	}
+
+	aside{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	aside .widget{
+		flex-grow: 1;
+		margin: 5px;
+	}
+}
+
+@media screen and (max-width: 406px){
+	header .logo{
+		width: 100%;
+		min-width: 300px;
+		margin-bottom: 0px;
+
+		/*Flexbox*/
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		/*flex-flow*/
+	}
+
+	header .logo img{
+		width: 100px;
+		height: 90px;
+		margin: 8px auto 8px auto;
+	}
+
+	header .logo a{
+		width: auto;
+		height: 80px;
+		margin: 0;
+
+		/*flexbox*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	footer{
+		justify-content: center;
+	}
+
+	footer .social{
+		margin-top: 10px;
+	}
+}
+
+
+
+
+
 
 
 
